@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ladder statement</title>
+	</head>
+		<!-- <link href="css/style.css" rel="stylesheet"> -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<meta charset = "utf-8">
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			.bg-baba{
+				background-color:#022d5d;
+			}
+			.white{
+				color:white;
+			}
+			.font-20{
+				font-size:20px;
+			}
+			.text-indent{
+				text-indent:5px;
+			}
+			.flex-1{
+				flex:1;
+			}
+			.width-100px{
+				width:100px;
+			}
+		</style>	
+	<body>
+		<main>
+			<header class="bg-baba p-1">
+				<div class="container p-1">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="logo">
+								<a href="ladderStatement.html" class="white  font-20"><strong><i class="fa fa-envira" style="font-size:24px"></i>  	 Baba Programmer</strong></a>
+							</div><!--end-logo-->
+						</div><!--end-col-md-6-->
+						<div class="col-md-8 text-right ">
+							<a href="tel:+918319636062" class="white"><i class="fa fa-phone"> </i>+91-83 19 63 60 62</a>
+							<a href="tel:+918319636062" class="white text-indent"><i class="fa fa-phone"></i>+91-96 91 12 42 51</a>
+							<a href="tel:+918319636062" class="white text-indent"><i class="fa fa-phone"></i>+91-77 52 49 40 36</a>
+							<a href="mailto:babaprogramer021@gmail.com" class="white text-indent"><i class="fa fa-envelope"></i> babaprogramer021@gmail.com</a>
+						</div><!--end-col-md-6-->
+					</div><!--end-row-->
+				</div><!--end-container-->
+			</header>
+			<!-- <nav> -->
+				<!-- <div class="container-fluid"> -->
+					<!-- <div class="row"> -->
+						<!-- <div class="col-md-12 p-4"> -->
+							<!-- <ul class="list-unstyled d-flex"> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Home</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1 "> -->
+									<!-- <a href="#">Digital Marketing </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">HTML And HTML5 </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Css And Css3 </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Bootstrap </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Javascript</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Jquery</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Ajax </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">AngularJs</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Reactjs </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Json</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Java</a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Php And Mysql </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">C And C++ </a> -->
+								<!-- </li> -->
+								<!-- <li class="flex-1"> -->
+									<!-- <a href="#">Python</a> -->
+								<!-- </li> -->
+							<!-- </ul> -->
+						<!-- </div><!--end-col-md-12--> -->
+					<!-- </div><!--end-row--> -->
+				<!-- </div><!--end-container--> -->
+			<!-- </nav> -->
+			<article>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 form-group">
+							<h3>Faculty Detail:</h3>
+							<input type="text" placeholder="Enter Name" class="form-control" id="faculty">
+								<p id="fdetail"></p>
+						</div><!--end-col-md-5-->
+							
+						
+						<div class="col-md-2 ">
+							
+						</div><!--end-col-md-5-->
+						<div class="col-md-5 form-group">
+							<h3>Student Detail:</h3>
+							<input type="text" placeholder="Enter Name" class="form-control" id="student">	
+								<p id="sdetail"></p>
+						</div><!--end-col-md-5-->
+							
+					</div><!--end-row-->
+				</div><!--end-container-->
+			</article>
+		</main>
+	<script>
+		
+		//js for Faculty
+// var fclt=document.querySelector("#faculty");
+// var fclt=document.getElementById("faculty");
+	faculty.onblur=function(){
+		// var fclt=document.querySelector("#faculty").value;
+		var fclt=document.getElementById("faculty").value;
+			if(fclt=="kamal"){
+				fdetail.innerHTML+=`
+				Name : ${fclt}<br>
+				Full Name : Kamal Pandey<br>
+				Mob: 123456789<br>
+				Add: Ganga Nagar Face 2
+				`;
+			}
+			else if(fclt=="baba"){
+				fdetail.innerHTML=`
+				Name : ${fclt}<br>
+				Full Name : (BaBa)Kamal Pandey<br>
+				Mob: 789456123<br>
+				Add: Mangla Ganga Nagar Face 2
+				`;
+				
+			}
+			else{
+				fdetail.innerText="No Record Found";
+			}
+	};
+	
+		//js for student
+		
+	student.onblur=function(){
+		var std=document.getElementById("student").value;
+			if(std=="ankit"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: Ankit Shrivas<br>
+					Mob:1232345<br>
+					Address: Mangla Bilaspur	
+				`;
+			}
+			else if(std=="sagar"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: Sagar Gadkari<br>
+					Mob:1232345<br>
+					Address: Shubham Vihar Bilaspur	
+				`;
+			}
+			else if(std=="anannt"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: Anannt Gupta<br>
+					Mob:1232345<br>
+					Address: Usha Upvan Bilaspur	
+				`;
+			}
+			else if(std=="anand"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: Anand mishra<br>
+					Mob:1232345<br>
+					Address: Uttar Pradesh Sarkaar	
+				`;
+			}
+			else if(std=="jaydeep"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: jaydeep sahu<br>
+					Mob:1232345<br>
+					Address: sakri	
+				`;
+			}
+			else if(std=="sonti"){
+				sdetail.innerHTML+=`Name:${std}<br>
+					Full Name: sonti tripathi
+					Mob:1232345
+					Address: Uttar Pradesh	
+				`;
+			}
+			else{
+				sdetail.innerHTML+=`No Record Found`;
+			}
+	};	
+	</script>	
+	</body>
+</html>
